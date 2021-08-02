@@ -17,7 +17,7 @@ public class Simulation {
 
     @Min(value = 12) @Max(value = 360)
     @Column(name ="TermMonths")
-    private Long termMonths;
+    private int termMonths;
 
     @Column(name = "RegistrationDate")
     private Date registrationDate;
@@ -46,11 +46,11 @@ public class Simulation {
         this.client = client;
     }
 
-    public Long getTermMonths() {
+    public int getTermMonths() {
         return termMonths;
     }
 
-    public void setTermMonths(Long termMonths) {
+    public void setTermMonths(int termMonths) {
         this.termMonths = termMonths;
     }
 
